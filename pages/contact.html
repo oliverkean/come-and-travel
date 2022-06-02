@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/assets/mountain.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Come and Travel | Baguio City</title>
+</head>
+<body id="top">
+    <!-- header -->
+   <header>
+    <div class="logo"><a href="#top"><h1>COME AND TRAVEL</h1></a></div>
+    <!-- menu for desktop and laptops-->   
+       <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#top">Contacts</a></li>
+                <li><a href="./location-map.html">Location Map</a></li>
+                <li><a class="other" href="../pages/other.html">Others</a></li>
+            </ul>
+       </nav>
+
+    <!-- menu for mobile and tablets -->
+       <div class="menu_icon" onclick="toggleMobileMenu(this)">
+           <div class="bar1"></div>
+           <div class="bar2"></div>
+           <div class="bar3"></div>
+           <ul class="mobile_menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#top">Contacts</a></li>
+                <li><a href="./location-map.html">Location Map</a></li>
+                <li><a class="other_mobile" href="../pages/other.html">Others</a></li>
+            </ul>
+       </div>
+   </header>
+   <!-- end of header -->
+
+   <section class="main-section">
+       <div>
+        <h2>Contact Us</h2>
+       <div id="error"></div>
+       
+       <form action="" id="myform" onsubmit="return validation()">
+           <div class="input_field">
+               <input type="text" placeholder="Name" id="name">
+           </div>
+
+           <div class="input_field">
+            <input type="text" placeholder="Phone Number" id="phone">
+            </div>
+
+            <div class="input_field">
+            <input type="text" placeholder="Email" id="email">
+            </div>
+
+            <div class="input_field">
+                <textarea placeholder="Message" id="message"></textarea>
+            </div>
+            <div class="btn">
+                <input type="submit">
+            </div>
+       </form>
+
+       </div>
+   </section>
+
+   <script src="../javascript/index.js"></script>
+   <script src="../javascript/contact.js"></script>
+</body>
+</html>
